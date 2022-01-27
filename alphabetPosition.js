@@ -1,4 +1,5 @@
 export const alphabetPosition = (str) => {
   let modifiedStr = str.toLowerCase().replace(/[^a-z]/g, "");
-  return [...modifiedStr].map((letter) => letter.charCodeAt() - "a".charCodeAt() + 1).join(" ");
+  let charCodeOfA = "a".charCodeAt();
+  return [...modifiedStr].map((letter) => letter.charCodeAt() - charCodeOfA + 1).join(" ");
 };
