@@ -1,4 +1,4 @@
 export const isPalindrome = (str) => {
-    let modifiedStr = str.toLowerCase().replace(/[ ,.?!]/g, "");
+    const modifiedStr = str.toLowerCase().replace(/[\s,.?!]/g, "");
     return modifiedStr == modifiedStr.split("").reverse().join("");
 }
